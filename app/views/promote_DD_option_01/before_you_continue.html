@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">Get a prisoner reference to use in a UK bank transfer</span>
+    <h1 class="govuk-heading-xl">
+      Before you continue
+    </h1>
+    <p class="govuk-!-font-weight-bold">You can:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>make a bank transfer using online banking, your mobile banking app or telephone banking from a UK bank account</li>
+    </ul>
+    <p class="govuk-!-font-weight-bold">You can't:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>go into a bank branch to transfer money</li>
+      <li>transfer money from a bank account outside the UK</li>
+      <li>make a payment by CHAPS</li>
+    </ul>
+
+    <a class="govuk-button govuk-!-margin-top-3" data-module="govuk-button" href="#">
+      I understand
+    </a>
+
+
+  </div>
+
+
+</div>
+{% endblock %}

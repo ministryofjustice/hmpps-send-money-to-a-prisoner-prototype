@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Get a prisoner reference to use in a UK bank transfer
+    </h1>
+
+    <ol class="govuk-list govuk-list--number">
+      <li>You’ll get a prisoner reference you can use to make a bank transfer using online banking, your mobile banking app or telephone banking</li>
+      <li>The money should take up to 3 working days to reach the prisoner’s account</li>
+      <li>You don’t get email confirmation after your bank transfer</li>
+    </ol>
+
+    <p class="govuk-inset-text">Because of it is the <strong>easiest and most reliable</strong> way of getting money to a prisoner, it is recommended that you <a href="pay_by_DD">pay by debit card</a></p>
+
+    <a class="govuk-button" data-module="govuk-button" href="before_you_continue">
+      Continue
+    </a>
+
+
+  </div>
+
+
+</div>
+{% endblock %}
