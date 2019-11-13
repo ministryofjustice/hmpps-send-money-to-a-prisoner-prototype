@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Pay now by debit card
+    </h1>
+
+    <p class="govuk-body-l">Paying by debit card is the <strong>easiest and most reliable</strong> way of getting money to a prisoner.</p>
+
+
+    <ol class="govuk-list govuk-list--number">
+      <li>You can complete your payment here using Mastercard, Visa and Maestro debit cards</li>
+      <li>Money usually takes less than 3 working days to reach a prisoner’s account, but occasionally takes longer</li>
+      <li>You’ll get email confirmation of payment</li>
+      <li>You can make an international payment using a debit card</li>
+      <li>Pre-paid debit cards can not be used</li>
+    </ol>
+
+    <a class="govuk-button govuk-!-margin-top-3" data-module="govuk-button" href="enter_prisoner_details">
+      Continue
+    </a>
+    <a class="govuk-link" href="no_DD" style="display:block">I do not have a debit card</a>
+
+
+  </div>
+
+
+</div>
+{% endblock %}

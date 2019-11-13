@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<style media="screen">
+.mtp-table{
+  text-align: left;
+}
+th{
+  font-weight: normal;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+td{
+  font-weight: bold;
+}
+</style>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l govuk-!-padding-top-0" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <div>
+            <div class="govuk-panel__body">Your prisoner reference is</div>
+            <div class="govuk-panel__title">123A4B56/DD/MM/YYYY</div>
+            <div class="govuk-panel__body">Use this reference to make your bank tansfer</div>
+          </div>
+        </div>
+        <div class="">
+          <p>
+            <svg width="30" height="40">
+              <rect width="30" height="40" style="fill:rgb(0,0,0);stroke-width:3;stroke:rgb(0,0,0)" />
+            </svg><a href="#" class="govuk-link" style="margin-left:10px">Print this page</a>&nbsp;<a href="#" class="govuk-link" style="margin-left:10px">Email me this page</a>
+          </p>
+        </div>
+
+
+        <h2 class="govuk-heading-m govuk-!-margin-top-6">Now you can make the bank transfer</h2>
+
+        <ol class="govuk-list govuk-list--number">
+          <li>Log into your online banking account, mobile banking app or use your telephone banking, as normal.</li>
+          <li>Copy and paste these details into the transfer:</li>
+          <div class="govuk-inset-text mtp-table">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Account number:</th>
+                  <td>10018743</td>
+                </tr>
+                <tr>
+                  <th>Sort code:</th>
+                  <td>60-70-80</td>
+                </tr>
+                <tr>
+                  <th>Reference:</th>
+                  <td>A1401AE/01/01/70</td>
+                </tr>
+                <tr>
+                  <th>Payee/Name:</th>
+                  <td>A1401AE/01/01/70</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            All prisons share this bank account. Please use your prisoner reference to make sure the money goes to the right prisoner.
+          </p>
+          <p>
+            <strong>Remember:</strong> You can’t do a bank transfer in-branch and you must use a UK bank account.
+          </p>
+          <li>The money should take up to 3 working days to reach the prisoner’s account. No money is processed at weekends or bank holidays.</li>
+        </ol>
+
+        <p>
+
+
+              <a href="https://send-money-test.prisoner-money.service.justice.gov.uk/en-gb/help/bank-transfer-issues/">Find further help</a> on how to use the service or <a href="/en-gb/contact-us/">contact us</a>.
+            </p>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

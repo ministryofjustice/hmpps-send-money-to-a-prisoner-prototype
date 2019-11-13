@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l govuk-!-padding-top-0" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation" style="background-color:#f47738">
+          <h1 class="govuk-panel__title">
+            Payment almost done...
+          </h1>
+        </div>
+
+        <p class="govuk-!-font-weight-bold">We'll email you once the payment has gone through.
+        </p>
+        <!-- <p class="govuk-body">Money usually takes less than 3 working days to reach a prisoner’s account, but occasionally takes longer.</p> -->
+
+        <p class="govuk-body">
+          <a href="#" class="govuk-link">Take a moment to rate this service?</a> (takes 30 seconds)
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
