@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <p>
+      Dear sender,
+    </p>
+    <p>
+      We’re sorry to tell you that the <strong>payment session expired</strong> before your payment could be taken.
+    </p>
+
+    <p>This payment has NOT gone through to the prisoner’s account.</p>
+
+
+    <p>
+      <div class="govuk-inset-text mtp-table" style="margin-left:15px">
+        <table>
+          <tbody>
+            <tr>
+              <th>Payment number:</th>
+              <td>XXXXXXXX</td>
+            </tr>
+            <tr>
+              <th>Account number:</th>
+              <td>10018743</td>
+            </tr>
+            <tr>
+              <th>Sort code:</th>
+              <td>60-70-80</td>
+            </tr>
+          </tbody>
+        </table>
+        <span style="color:red;">(would anything else go in here ^^^ ?)</span>
+      </div>
+    </p>
+
+    <p><strong>What now?</strong></p>
+    <p>
+      Your debit card payment has NOT been taken from your account.
+      Please go to <a href="https://www.gov.uk/send-prisoner-money">Send money to someone in prison</a> and try again.
+    </p>
+
+    <p>
+      We’re sorry for any inconvenience this may have caused.
+    </p>
+
+    <p>
+      Kind regards,
+    </p>
+
+    <p>
+      Prisoner Money team
+    </p>
+  </div>
+</div>
+<div class="govuk-!-margin-top-9">
+</div>
+<p style="color:red;" >(The footer below would not be shown, I just can't work out how to hide it!)</p>
+{% endblock %}
