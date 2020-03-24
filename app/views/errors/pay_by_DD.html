@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Your payment has been declined
+    </h1>
+
+    <p class="govuk-body-l">No money has been taken from your account.</p>
+    <p class="govuk-body">What next?</p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Wait 5 days or your card might be declined again</li>
+    </ul>
+<p class="govuk-body">
+  In the meantime:
+</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Check you're using the same address and details as your bank</li>
+
+      <li>Ask your bank if there are problems with your card</li>
+    </ul>
+
+    <!-- <a class="govuk-link" href="no_DD" style="display:block">Back to home</a> -->
+
+
+  </div>
+
+
+</div>
+{% endblock %}
