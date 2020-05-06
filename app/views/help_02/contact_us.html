@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Help
+    </h1>
+
+    <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+    <ul class="moj-sub-navigation__list">
+    <li class="moj-sub-navigation__item">
+      <a class="moj-sub-navigation__link" href="index">FAQs</a>
+    </li>
+
+    <li class="moj-sub-navigation__item">
+      <a class="moj-sub-navigation__link" aria-current="page" href="#2">Contact Us</a>
+    </li>
+
+    </ul>
+
+    </nav>
+
+    <h2 class="govuk-heading-m">What do you need help with?</h2>
+    <ul class="govuk-list ">
+      <li>
+        <a class="govuk-link" href="help_trying_to_pay">A payment I'm trying to make now</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="help_past_payment">A payment I've made in the past</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="help_service_question">A question about the service</a>
+      </li></ul>
+
+
+
+      </div>
+      {% endblock %}

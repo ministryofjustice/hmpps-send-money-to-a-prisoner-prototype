@@ -23,17 +23,33 @@ Start page example
   </div>
   <a href="#" class="govuk-back-link">Back</a>
 </div>
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-
     <h1 class="govuk-heading-xl">
       Help
     </h1>
 
+    <nav class="moj-sub-navigation" aria-label="Sub navigation">
+
+    <ul class="moj-sub-navigation__list">
+    <li class="moj-sub-navigation__item">
+      <a class="moj-sub-navigation__link" aria-current="page" href="#1">FAQs</a>
+    </li>
+
+    <li class="moj-sub-navigation__item">
+      <a class="moj-sub-navigation__link" href="contact_us">Contact Us</a>
+    </li>
+
+    </ul>
+
+    </nav>
+
+
       <h2 class="govuk-heading-m">Frequently asked questions</h2>
-      <p class="govuk-body-l">
-        Check if the answer to your question is here already before contacting us
-      </p>
+<p class="govuk-body-l">
+  Check if the answer to your question is here already before contacting us
+</p>
 
       <p class="govuk-body govuk-!-font-weight-bold">A payment has taken longer than expected</p>
       <p class="govuk-body">
@@ -45,17 +61,17 @@ Start page example
       </p>
 
       <p class="govuk-body govuk-!-font-weight-bold">A prisoner has been moved or released</p>
-      <ul class="govuk-list">
-        If the prisoner has been:
+        <ul class="govuk-list">
+          If the prisoner has been:
 
-        <ul class="govuk-list govuk-list--bullet">
-          <li>moved, the money will be transferred to the next prison, whether it’s a public or <a href="https://www.justice.gov.uk/about/hmps/contracted-out">private prison</a> – if it’s a private prison the process may take longer</li>
-          <li>released, they need to <a href="https://www.justice.gov.uk/contacts/prison-finder">contact the prison</a> and ask the prison to send them the money</li></ul>
-        </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>moved, the money will be transferred to the next prison, whether it’s a public or <a href="https://www.justice.gov.uk/about/hmps/contracted-out">private prison</a> – if it’s a private prison the process may take longer</li>
+            <li>released, they need to <a href="https://www.justice.gov.uk/contacts/prison-finder">contact the prison</a> and ask the prison to send them the money</li></ul>
+          </p>
+
+
+        </div>
 
 
       </div>
-
-
-    </div>
-    {% endblock %}
+      {% endblock %}
