@@ -28,16 +28,16 @@ Start page example
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <span class="govuk-caption-l">Help</span>
+    <span class="govuk-caption-l">Help with</span>
     <h1 class="govuk-heading-xl">
-      Making a payment
+      A payment I'm having problems making
     </h1>
 
 
     <fieldset class="govuk-fieldset">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-heading-m">
-          Please provide the information below so that your query can be resolved as soon as possible
+        <h1 class="govuk-heading-m govuk-!-font-weight-regular">
+          Give exact details so we can get back to you as soon as possible.
         </h1>
       </legend>
 
@@ -98,7 +98,7 @@ Start page example
         },
         {
           value: "Bank Transfer",
-          text: "Bank Transfer"
+          text: "Bank transfer"
         }
         ]
       }) }}
@@ -112,9 +112,18 @@ Start page example
         <label class="govuk-label" for="email">
           Your email address
         </label>
-<span class="govuk-hint">We need this so that we can send you a reply</span>
+        <span class="govuk-hint">We need this so that we can send you a reply</span>
         <input class="govuk-input govuk-!-width-two-thirds" id="email" name="email" type="text">
       </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="more-detail">
+          Give details:
+        </label>
+
+        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+      </div>
+
 
 
     </fieldset>
