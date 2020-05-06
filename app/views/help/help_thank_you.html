@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">Contact us</span>
+    <h1 class="govuk-heading-xl">
+      Thanks for your query
+    </h1>
+
+    <p class="govuk-body">
+      Thank you for getting in touch. We will respond to any questions as soon as we can.
+    </p>
+
+  </div>
+
+
+
+</div>
+{% endblock %}

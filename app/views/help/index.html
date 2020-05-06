@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Help
+    </h1>
+
+    <h2 class="govuk-heading-l">What do you need help with?</h2>
+    <ul class="govuk-list ">
+      <li>
+        <a class="govuk-link" href="help_trying_to_pay">A payment I'm trying to make now</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="help_past_payment">A payment I've made in the past</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="help_service_question">A question about the service</a>
+      </li></ul>
+
+      <h2 class="govuk-heading-m">Frequently asked questions</h2>
+<p class="govuk-body-l">
+  Check if the answer to your question is here already before contacting us
+</p>
+
+      <p class="govuk-body govuk-!-font-weight-bold">A payment has taken longer than expected</p>
+      <p class="govuk-body">
+        In almost all cases, the payment reaches the prisoner’s bank account in up to 3 days.
+
+        However, if it seems to be taking longer, it could be because an individual prison has put a payment on hold or the money could be in the prisoner’s account but the prisoner doesn’t know about it yet.
+
+        If you’re still worried after 7-10 days, please <a href="https://www.justice.gov.uk/contacts/prison-finder">contact the prison</a>.
+      </p>
+
+      <p class="govuk-body govuk-!-font-weight-bold">A prisoner has been moved or released</p>
+        <ul class="govuk-list">
+          If the prisoner has been:
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>moved, the money will be transferred to the next prison, whether it’s a public or <a href="https://www.justice.gov.uk/about/hmps/contracted-out">private prison</a> – if it’s a private prison the process may take longer</li>
+            <li>released, they need to <a href="https://www.justice.gov.uk/contacts/prison-finder">contact the prison</a> and ask the prison to send them the money</li></ul>
+          </p>
+
+
+        </div>
+
+
+      </div>
+      {% endblock %}
