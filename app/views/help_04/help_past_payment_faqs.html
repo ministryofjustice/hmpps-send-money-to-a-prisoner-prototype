@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help with</span>
+
+    <h1 class="govuk-heading-l">A payment I've already made</h1>
+
+    <h1 class="govuk-body-l">
+      Check if the answer to your question is here before contacting us
+    </h1>
+
+    <ul class="govuk-list">
+
+      <li><a href="#q6">Can I cancel a payment?</a></li>
+
+      <li><a href="#q7">Will my payment be transferred if a prisoner moves prisons?</a></li>
+
+      <li><a href="#q8">Can I get a refund if the prisoner has been released?</a></li>
+
+      <li><a href="#q9">You didn’t ask which prison it is - does it matter?</a></li>
+
+      <li><a href="#q10">My payment went through but isn’t in the prisoner’s account - why not?</a></li>
+
+      <li><a href="#q11">Why has my payment been refunded?</a></li>
+
+      <li><a href="#q12">How does a prisoner know they’ve received a payment?</a></li>
+
+      <li><a href="#q13">Does a prisoner know who a payment is from?</a></li>
+
+      <li><a href="#q14">I’m worried about the safety of a prisoner I’ve sent a payment to - what should I do?</a></li>
+</ul>
+
+      <div class="govuk-!-margin-top-5">
+
+      </div>
+
+      <p class="govuk-heading-s" id="q6">Can I cancel a payment?</p>
+      <p class="govuk-body">We can't cancel your payment because once it's gone through the system, it's non-refundable.</p>
+
+      <p class="govuk-heading-s" id="q7">Will my payment be transferred if a prisoner moves prisons?</p>
+      <p class="govuk-body">Your payment will be transferred to the new prison but it may take a few days.</p>
+
+      <p class="govuk-heading-s" id="q8">Can I get a refund if the prisoner has been released?</p>
+      <p class="govuk-body">Yes. Contact the prison and they’ll tell you what to do.</p>
+
+      <p class="govuk-heading-s" id="q9">You didn’t ask which prison it is - does it matter?</p>
+      <p class="govuk-body">No. The name of the prison does not affect the use of this service.</p>
+
+      <p class="govuk-heading-s" id="q10">My payment went through but isn’t in the prisoner’s account - why not?</p>
+      <p class="govuk-body">It can only be one of 2 things.</p>
+      <p>One - If you paid by bank transfer, you may have made a mistake typing in the prisoner reference number. You will get an automatic refund around 4 days after you made the payment.</p>
+      <p>Check for this refund in your bank account, then use the service again, carefully checking the details as you type them in.</p>
+
+      <p>Two - if you paid by bank transfer from abroad, by CHAPS or in a bank branch in the UK, you'll need to ask the prison for a refund.</p>
+      <p>To get a refund, write to the finance department at the prison.</p>
+      <p>Include in the letter:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the prisoner's name, their prisoner number and their date of birth</li>
+        <li>your name and address</li>
+        <li>the payment date and the amount</li></ul>
+        <p>The prison will refund you by cheque.</p>
+      </p>
+
+      <p class="govuk-heading-s" id="q11">Why has my payment been refunded?</p>
+      <p class="govuk-body">You've got a refund because when you made your bank transfer, a piece of information was wrong or missing. Please try again, checking that you're using the right details.</p>
+
+      <p class="govuk-heading-s" id="q12">How does a prisoner know they’ve received a payment?</p>
+      <p class="govuk-body">The prisoner might get an account slip from the wing officer when a payment has reached their account, but this can take a few days and not all prisons use these slips.Ask the prisoner to check with their wing officer if the money has reached their account. But payments take up to 3 days after you sent it.</p>
+
+      <p class="govuk-heading-s" id="q13">Does a prisoner know who a payment is from?</p>
+      <p class="govuk-body">A prisoner will see the sender’s name on their account slip, but not all prisons give out these slips.</p>
+
+      <p class="govuk-heading-s" id="q14">I’m worried about the safety of a prisoner I’ve sent a payment to - what should I do?</p>
+      <p class="govuk-body">If you’re worried about a prisoner, contact the prison and tell them. They will put you through to the Safer Custody team or an orderly officer. Use [find a prisoner](https://www.gov.uk/find-prisoner) if you need to check what prison they're in.</p>
+
+
+      <p class="govuk-heading-s">
+        If you haven't found the answer to your question contact us
+      </p>
+      <a href="help_past_payment" class="govuk-button">Contact us</a>
+
+    </div>
+    {% endblock %}

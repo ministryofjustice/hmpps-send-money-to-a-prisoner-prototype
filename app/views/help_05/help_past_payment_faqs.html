@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help with</span>
+
+    <h1 class="govuk-heading-l">A payment I've already made</h1>
+
+    <h1 class="govuk-body-l">
+      Check if the answer to your question is here before contacting us
+    </h1>
+
+    {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+    {{ govukAccordion({
+      id: "accordion-default",
+      items: [
+      {
+        heading: {
+          text: "Can I cancel a payment?"
+        },
+        content: {
+          html: "<p class='govuk-body'>We can't cancel your payment because once it's gone through the system, it's non-refundable.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "Will my payment be transferred if a prisoner moves prisons?"
+        },
+        content: {
+          html: "<p class='govuk-body'>Your payment will be transferred to the new prison but it may take a few days.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "Can I get a refund if the prisoner has been released?"
+        },
+        content: {
+          html: "<p class='govuk-body'>Yes. Contact the prison and they’ll tell you what to do.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "You didn’t ask which prison it is - does it matter?"
+        },
+        content: {
+          html: "<p class='govuk-body'>Lorem ipsum</p>"
+        }
+      },
+      {
+        heading: {
+          text: "My payment went through but isn’t in the prisoner’s account - why not?"
+        },
+        content: {
+          html: "<p class='govuk-body'>Lorem ipsum.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "Why has my payment been refunded?"
+        },
+        content: {
+          html: "<p class='govuk-body'>You've got a refund because when you made your bank transfer, a piece of information was wrong or missing. Please try again, checking that you're using the right details.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "How does a prisoner know they’ve received a payment?"
+        },
+        content: {
+          html: "<p class='govuk-body'>The prisoner might get an account slip from the wing officer when a payment has reached their account, but this can take a few days and not all prisons use these slips.Ask the prisoner to check with their wing officer if the money has reached their account. But payments take up to 3 days after you sent it.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "Does a prisoner know who a payment is from?"
+        },
+        content: {
+          html: "<p class='govuk-body'>A prisoner will see the sender’s name on their account slip, but not all prisons give out these slips.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "I’m worried about the safety of a prisoner I’ve sent a payment to - what should I do?"
+        },
+        content: {
+          html: "<p class='govuk-body'>If you’re worried about a prisoner, contact the prison and tell them. They will put you through to the Safer Custody team or an orderly officer. Use [find a prisoner](https://www.gov.uk/find-prisoner) if you need to check what prison they're in.</p>"
+        }
+      }
+      ]
+    }) }}
+
+    <p class="govuk-body">
+      If you haven't found the answer to your question contact us
+    </p>
+    <a href="help_past_payment" class="govuk-button">Contact us</a>
+
+  </div>
+  {% endblock %}

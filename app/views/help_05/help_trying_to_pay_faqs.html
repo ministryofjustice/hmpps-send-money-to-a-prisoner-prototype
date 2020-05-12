@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help with</span>
+
+    <h1 class="govuk-heading-l">A payment I'm having problems making</h1>
+
+    <h1 class="govuk-body-l">
+      Check if the answer to your question is here before contacting us
+    </h1>
+
+
+
+    {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+    {{ govukAccordion({
+      id: "accordion-default",
+      items: [
+      {
+        heading: {
+          text: "Can you tell me the prisoner number or their date of birth?"
+        },
+        content: {
+          html: "<p class='govuk-body'>No. By law we can't give out confidential prisoner information. Ask the prisoner for these details.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "How do I make a payment from abroad?"
+        },
+        content: {
+          html: "<p class='govuk-body'>You can only make a payment from outside the UK using a debit card (Visa, Mastercard or Maestro). We don't accept credit cards or prepaid debit cards.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "Can I send money to a Scottish prison?"
+        },
+        content: {
+          html: "<p class='govuk-body'>This is the content for Know your audience.</p>"
+        }
+      }
+      ]
+    }) }}
+
+    <p class="govuk-body">
+      If you haven't found the answer to your question contact us
+    </p>
+    <a href="help_trying_to_pay" class="govuk-button">Contact us</a>
+
+  </div>
+  {% endblock %}
