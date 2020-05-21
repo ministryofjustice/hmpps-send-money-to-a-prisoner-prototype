@@ -33,7 +33,7 @@ Start page example
     <h1 class="govuk-heading-l">A payment I've already made</h1>
 
     <h1 class="govuk-body-l">
-      Check if the answer to your question is here before contacting us
+      Check if the answer is here before you contact us
     </h1>
 
     {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
@@ -43,7 +43,7 @@ Start page example
       items: [
       {
         heading: {
-          text: "Can I cancel a payment?"
+          text: "I want to cancel a payment"
         },
         content: {
           html: "<p class='govuk-body'>We can't cancel your payment because once it's gone through the system, it's non-refundable.</p>"
@@ -51,7 +51,7 @@ Start page example
       },
       {
         heading: {
-          text: "Will my payment be transferred if a prisoner moves prisons?"
+          text: "The prisoner has moved prisons"
         },
         content: {
           html: "<p class='govuk-body'>Your payment will be transferred to the new prison but it may take a few days.</p>"
@@ -59,18 +59,10 @@ Start page example
       },
       {
         heading: {
-          text: "Can I get a refund if the prisoner has been released?"
+          text: "The prisoner has been released"
         },
         content: {
-          html: "<p class='govuk-body'>Yes. Contact the prison and they’ll tell you what to do.</p>"
-        }
-      },
-      {
-        heading: {
-          text: "You didn’t ask which prison it is - does it matter?"
-        },
-        content: {
-          html: "<p class='govuk-body'>Lorem ipsum</p>"
+          html: "<p class='govuk-body'>Yes. Contact the prison and they’ll tell you how to get a refund.</p>"
         }
       },
       {
@@ -125,6 +117,14 @@ The prison will refund you by cheque.</p>"
         },
         content: {
           html: "<p class='govuk-body'>If you’re worried about a prisoner, contact the prison and tell them. They will put you through to the Safer Custody team or an orderly officer. Use [find a prisoner](https://www.gov.uk/find-prisoner) if you need to check what prison they're in.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "You didn’t ask which prison it is"
+        },
+        content: {
+          html: "<p class='govuk-body'>The name of the prison does not affect the use of this service.</p>"
         }
       }
       ]
