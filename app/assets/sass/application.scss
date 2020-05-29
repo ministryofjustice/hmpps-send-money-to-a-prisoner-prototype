@@ -17,14 +17,81 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-.mtp-table{
-  text-align: left;
-}
-.mtp-table th{
-  font-weight: normal;
-  padding-right: 15px;
-  padding-bottom: 5px;
-}
-.mtp-table td{
-  font-weight: bold;
-}
+// interruption card from home office
+.flash-card {
+  margin-top: 1em;
+  padding: 30px;
+  background: #005EA5;
+  color: #FFF;
+
+  header {
+    background-color: inherit;
+  }
+
+  ul.how-to-renew {
+    padding-left: 0;
+    list-style: none;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 0;
+      padding: 0;
+      color: #FFF;
+      font-size: 28px;
+    }
+
+    li {
+      margin-bottom: 22px;
+    }
+  }
+
+  h1 {
+    color: #FFF;
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+  }
+
+  a {
+    color: #FFF;
+    &:visited, &:hover, &:active {
+      color: #FFF; }
+    }
+    details {
+      // margin-bottom: 1em;
+      summary {
+        color: #FFF;
+      }
+      .panel {
+        border-left-color: #FFF;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    .flash-card {
+      margin-top: 1.25em;
+      // padding: 35px 50px;
+    }
+  }
+
+  .button-white{
+    background-color: white;
+    color: #0b0c0c;
+  }
+  .button-white:hover{
+    background-color: #f3f2f1;
+  }
+
+  // hacks
+  .mtp-table{
+    text-align: left;
+  }
+  .mtp-table th{
+    font-weight: normal;
+    padding-right: 15px;
+    padding-bottom: 5px;
+  }
+  .mtp-table td{
+    font-weight: bold;
+  }
