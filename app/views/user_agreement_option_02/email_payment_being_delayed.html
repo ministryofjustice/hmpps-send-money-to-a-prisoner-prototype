@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <p>
+      Dear sender,
+    </p>
+    <p>
+      <strong>This payment has been put on hold for up to 5 days.</strong>
+    </p>
+
+    <p>
+      <div class="govuk-inset-text mtp-table" style="margin-left:15px">
+        <table>
+          <tbody>
+            <tr>
+              <th>Payment to:</th>
+              <td>Prisoner Name (A1234BC)</td>
+            </tr>
+            <tr>
+              <th>Amount:</th>
+              <td>£XX</td>
+            </tr>
+            <tr>
+              <th>Reference:</th>
+              <td>HDJ2123F</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </p>
+
+
+    <p>
+      Your payment has been selected for a compliance check.
+    </p>
+
+
+    <p>
+      We’ll email you a payment update as soon as we can and are sorry for any inconvenience this may cause.
+    </p>
+
+    <p>
+      Kind regards,
+    </p>
+
+    <p>
+      Prisoner money compliance team
+      <br><a class="govuk-link" href="#">moneyteam@email.com</a>
+    </p>
+  </div>
+</div>
+<div class="govuk-!-margin-top-9">
+</div>
+<p style="color:red;" >(The footer below would not be shown, I just can't work out how to hide it!)</p>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Get a prisoner reference to make your UK bank transfer
+    </h1>
+    <p>
+      You’ll get a prisoner reference so you can make a bank transfer using:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>online banking</li>
+      <li>mobile banking app</li>
+      <li>telephone banking</li>
+    </ul>
+    <p>
+      You can re-use this reference for this prisoner each time you make a transfer.
+      The money should take around 3 days to reach the prisoner’s account.
+      You won’t get email confirmation after your bank transfer.
+    </p>
+
+    <p class="govuk-!-font-weight-bold">
+      You can't
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>go into a bank branch to transfer money</li>
+      <li>transfer money from a bank account outside the UK</li>
+      <li>make a payment by CHAPS</li>
+    </ul>
+
+
+
+
+
+    <p class="govuk-inset-text"><a href="pay_by_DD">Paying by debit card</a> is the <strong>fastest</strong>, <strong>simplest</strong> and most <strong>reliable</strong> way of sending money to a prisoner - and it’s <strong>free</strong></p>
+
+    <a class="govuk-button govuk-!-margin-top-3" data-module="govuk-button" href="enter_prisoner_details_bank_transfer">
+      Continue
+    </a>
+
+
+  </div>
+
+
+</div>
+{% endblock %}

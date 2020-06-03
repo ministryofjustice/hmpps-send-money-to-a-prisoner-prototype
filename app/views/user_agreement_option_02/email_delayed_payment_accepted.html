@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <p>
+      Dear sender,
+    </p>
+    <p>
+      <strong>This payment has now gone through.</strong>
+    </p>
+
+    <p>
+      <div class="govuk-inset-text mtp-table" style="margin-left:15px">
+        <table>
+          <tbody>
+            <tr>
+              <th>Payment to:</th>
+              <td>Prisoner Name (A1234BC)</td>
+            </tr>
+            <tr>
+              <th>Amount:</th>
+              <td>£XX</td>
+            </tr>
+            <tr>
+              <th>Confirmation number:</th>
+              <td>HDJ2123F</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </p>
+
+<p>
+We’re emailing to let you know that this payment has now been processed and will reach the prisoner’s account in one working day.
+</p>
+
+<p>
+Thank you for your patience.
+</p>
+
+
+  <p>
+    Kind regards,
+  </p>
+
+  <p>
+    Prisoner money team
+  </p>
+</div>
+</div>
+<div class="govuk-!-margin-top-9">
+</div>
+<p style="color:red;" >(The footer below would not be shown, I just can't work out how to hide it!)</p>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <p>
+      Dear sender,
+    </p>
+    <p>
+      <strong>This payment has NOT been sent to the prisoner.</strong>
+    </p>
+
+    <p>
+      <div class="govuk-inset-text mtp-table" style="margin-left:15px">
+        <table>
+          <tbody>
+            <tr>
+              <th>Payment to:</th>
+              <td>Prisoner Name (A1234BC)</td>
+            </tr>
+            <tr>
+              <th>Payment amount:</th>
+              <td>£XX</td>
+            </tr>
+            <tr>
+              <th>Reference:</th>
+              <td>HDJ2123F</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </p>
+
+    <p>
+      We’re emailing to tell you this payment has not passed our compliance check.
+      HMPPS is committed to maintaining prison safety and security and because this payment may compromise this, we have been unable to process it.
+    </p>
+
+    <p><strong>What now?</strong></p>
+    <p>Your debit card payment has <strong>not</strong> been taken from your account.</p>
+
+    <p>If you need further assistance with this, <a href="#">please email us</a>.</p>
+
+
+    <!-- <p>We’re sorry for any inconvenience this may have caused.</p> -->
+
+    <p>
+      Kind regards,
+    </p>
+
+    <p>
+      Prisoner money compliance team
+    </p>
+  </div>
+</div>
+<div class="govuk-!-margin-top-9">
+</div>
+<p style="color:red;" >(The footer below would not be shown, I just can't work out how to hide it!)</p>
+{% endblock %}
