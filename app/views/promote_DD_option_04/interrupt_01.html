@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="flash-card" style="color:white;">
+  <header>
+    <h1 class="govuk-heading-l">Before you continue</h1>
+  </header>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l" style="color:white; margin-left:0px">
+        By using this service you're agreeing to our terms and conditions and privacy policy.
+      </p>
+      <div class="form-group" style="margin-top:25px;margin-bottom:0;">
+        <a class="govuk-button button-white" style="color:#0b0c0c;" href="/promote_DD_option_04/pay_by_DD">Continue</a>
+      </div>
+
+      <!-- <p class="govuk-body" style="color:white; margin-left:0px"> <a href="https://send-money-test.prisoner-money.service.justice.gov.uk/en-gb/terms/">Terms and conditions</a> and <a href="https://send-money-test.prisoner-money.service.justice.gov.uk/en-gb/privacy/">privacy policy</a>
+      </p> -->
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
