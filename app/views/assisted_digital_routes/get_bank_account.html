@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help</span>
+    <p class="govuk-heading-l">How to set up a basic bank account</p>
+
+
+    <p class="govuk-body">You can use the 'Send money to someone in prison' service if you have a bank account.</p>
+
+    <p class="govuk-body">If you don't have one, or you don't think you'd get one, you might be surprised to know you can probably set up a basic, fee-free bank account.</p>
+
+    <p class="govuk-heading-s">This is a bank account for people:</p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+
+      <li>who don’t already have a bank account but want to give and receive money online</li>
+
+      <li>who don’t qualify for a standard current account</li>
+
+      <li>with poor credit history</li>
+
+      <li>with no credit history</li>
+
+      <li>who don’t have obvious proof of ID (for example, passport,</li> driving licence)
+
+      <li>who don’t have obvious proof of address (for example, utility</li> bills)
+
+      <li>who want to apply in person or by phone</li>
+
+      <li>who don’t want to pay to have a bank account</li>
+
+    </ul>
+
+
+    <p class="govuk-heading-s">No proof of ID or address</p>
+
+    <p class="govuk-body">People are surprised that banks want to help people set up basic accounts but most banks will accept:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+
+      <li>a letter from your GP/social landlord/vicar/care home manager/warden of sheltered accommodation, hostel or refuge/armed services officer as proof of ID</li>
+
+      <li>a letter from DWP/benefits/state pension/HMRC/JobCentre+/your local council/-Blue Badge disability, your employer, college or training provider as proof of address.</li>
+
+    </ul>
+
+    <p class="govuk-heading-s">What to do next</p>
+
+    <p class="govuk-body">Go to your local bank or Citizens Advice and they will help you set up your basic bank account. Ask them to go to this page on GOV.UK, if it helps.</p>
+
+    <p class="govuk-body">Then you can send money to a prisoner using your debit card at <a href="#">www.gov.uk/send-prisoner-money</a>.</p>
+
+    <p class="govuk-body">You can also ask staff in the visitor centre for more information or search online for ‘Money Advice Service’, then type in ‘basic bank account’.</p>
+
+
+  </div>
+  {% endblock %}

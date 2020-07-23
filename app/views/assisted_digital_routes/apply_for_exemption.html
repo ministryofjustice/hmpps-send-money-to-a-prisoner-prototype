@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help</span>
+    <p class="govuk-heading-l">Apply for an exemption to send money through the post</p>
+
+<p class="govuk-body">If you can’t send money online, you can ask the prison for an ‘exemption’.</p>
+
+<p class="govuk-body"><a href="/public/images/exemption_request_form.pdf">Print off and fill in this exemption request form</a>, then post it, along with the necessary proof, to the ‘Business Hub’ of the prison.</p>
+
+<p class="govuk-body">Your request may not be granted so don't send any money to the prison until you have your exemption letter.</p>
+
+<p class="govuk-body">Exemptions are only given if it's your only option to send money to friends and family by post. To keep prisons safe, the governor can withdraw an exemption at any time.</p>
+
+<p class="govuk-heading-s">The proof you need to send in with the form</p>
+
+<ul class="govuk-list govuk-list--bullet">
+
+<li>An account refusal from one of the following: Barclays, Clydesdale and Yorkshire Bank, Co-operative Bank, HSBC Lloyds Banking Group (including Halifax and Bank of Scotland), Nationwide Royal Bank of Scotland (including NatWest and Ulster Bank), Santander, TSB</li>
+
+<li>Proof that your bank account does not give you access to a debit card or cheque book</li>
+
+<li>If you live overseas, proof of residence and account refusal from a bank in your country</li>
+
+</ul>
+
+<p class="govuk-body"><a href="/public/images/exemption_request_form.pdf">Print off and fill in this exemption request form</a></p>
+
+  </div>
+  {% endblock %}
