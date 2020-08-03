@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help with</span>
+
+    <h1 class="govuk-heading-l">Making a payment</h1>
+
+    <h1 class="govuk-body-l">
+      Check if the answer is here before you contact us
+    </h1>
+
+
+
+    {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+    {{ govukAccordion({
+      id: "accordion-default",
+      items: [
+      {
+        heading: {
+          text: "I want to know the prisoner number or date of birth"
+        },
+        content: {
+          html: "<p class='govuk-body'>By law we can't give out confidential prisoner information. Ask the prisoner for these details.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "I want to make a payment from abroad"
+        },
+        content: {
+          html: "<p class='govuk-body'>You can only make a payment from outside the UK using a debit card (Visa, Mastercard or Maestro). We don't accept credit cards or prepaid debit cards.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "I want to send money to a prison in Scotland or Northern Ireland"
+        },
+        content: {
+          html: "<p class='govuk-body'>Our service is only available in [prisons in England and Wales](https://www.gov.uk/government/collections/prisons-in-england-and-wales).
+            Contact the [Scottish](https://www.sps.gov.uk/Corporate/Prisons/Prisons.aspx) or [Northern Irish](https://www.justice-ni.gov.uk/topics/prisons/prison-estate) prison directly to find out how to send money to them.</p>"
+          }
+        },
+        {
+          heading: {
+            text: "I don't have a bank account"
+          },
+          content: {
+            html: "<p class='govuk-body'>If you can't use this digital service because you don't have a bank account, you can find out how to set up a bank account [links to: /assisted_digital_routes/get_bank_account]</p>"
+          }
+        }
+        ,
+        {
+          heading: {
+            text: "I don't have internet access"
+          },
+          content: {
+            html: "<p class='govuk-body'>If you can't use this service because you don't have access to a computer or the internet, you can apply for an exemption [links to: /assisted_digital_routes/apply_for_exemption] which may allow you to send money through the post.</p>"
+          }
+        }
+        ]
+      }) }}
+
+      <p class="govuk-body">
+        If you haven't found the answer:
+      </p>
+      <a href="help_trying_to_pay" class="govuk-button">Contact us</a>
+
+    </div>
+    {% endblock %}
