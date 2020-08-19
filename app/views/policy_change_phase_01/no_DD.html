@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="moj-banner">
+
+      <svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+        <path d="M13.7,18.5h-2.4v-2.4h2.4V18.5z M12.5,13.7c-0.7,0-1.2-0.5-1.2-1.2V7.7c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2v4.8
+        C13.7,13.2,13.2,13.7,12.5,13.7z M12.5,0.5c-6.6,0-12,5.4-12,12s5.4,12,12,12s12-5.4,12-12S19.1,0.5,12.5,0.5z" /></svg>
+
+        <div class="moj-banner__message">
+
+          <h2 class="govuk-heading-m">Service change from November 2nd</h2>
+          <p class="govuk-body">
+            This service change will mean the best way to send money to someone in prison will be by debit card.
+          </p>
+          <p class="govuk-body">
+            You will not be able to send in cash, cheques or postal orders by post either.
+          </p>
+          <p class="govuk-body">
+            This service change will mean the best way to send money to someone in prison will be by debit card.
+          </p>
+          <p class="govuk-body">
+            This change is to keep everyone who lives and works in prisons safe. If it means you can no longer use this service, there are  <a href="/help_07/help_alternatives">alternatives</a>.
+          </p>
+        </div>
+
+      </div>
+
+
+      <h1 class="govuk-heading-xl">
+        Get a prisoner reference to make your UK bank transfer
+      </h1>
+      <p>
+        You’ll get a prisoner reference so you can make a bank transfer using:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>online banking</li>
+        <li>mobile banking app</li>
+        <li>telephone banking</li>
+      </ul>
+      <p>
+        You can re-use this reference for this prisoner each time you make a transfer.
+        The money should take around 3 days to reach the prisoner’s account.
+        You won’t get email confirmation after your bank transfer.
+      </p>
+
+      <p class="govuk-!-font-weight-bold">
+        You can't
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>go into a bank branch to transfer money</li>
+        <li>transfer money from a bank account outside the UK</li>
+        <li>make a payment by CHAPS</li>
+      </ul>
+
+
+      <p class="govuk-inset-text"><a href="pay_by_DD">Paying by debit card</a>  is <strong>fast, simple, reliable and free</strong> and after November 2nd will be the best way to send money to someone in prison</p>
+
+      <a class="govuk-button govuk-!-margin-top-3" data-module="govuk-button" href="enter_prisoner_details_bank_transfer">
+        Continue
+      </a>
+
+
+    </div>
+
+
+  </div>
+  {% endblock %}
