@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Staying in touch with someone in prison
+    </h1>
+    <p class="govuk-body-s">
+      Contents
+    </p>
+
+    <ul class="govuk-list" style="font-size:16px !important">
+      <li>– <a href="#">Letters and telephone calls</a></li>
+      <li>– <a href="#">Email and social media</a></li>
+      <li>– <a href="#">Banned items</a></li>
+      <li>– Sending money</li>
+      <li>– <a href="#">Visiting someone in prison</a></li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-top-4">
+  <div class="govuk-grid-column-two-thirds" style="border-top:1px solid #b1b4b6">
+<div class="govuk-!-margin-bottom-3">
+
+</div>
+      <h2 class="govuk-heading-m">Sending money</h2>
+
+      <p>The best way to send money to someone in prison is to use a <a href="start">Visa, Mastercard and Maestro debit card</a>.</p>
+
+      <p class="govuk-heading-m">If you do not have a debit card</p>
+      <p class="govuk-body">You can find out how to get one by <a href="/assisted_digital_routes/get_bank_account">setting up a bank account</a>.</p>
+
+      <p class="govuk-heading-m">If you do not have access to this service</p>
+      <p class="govuk-body">You can <a href="/assisted_digital_routes/apply_for_exemption">apply for an exemption</a> which, in exceptional circumstances, might allow you to send money in through the post.</p>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary" style="border-top:2px solid #1d70b8">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Support for families and friends of prisoners
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Prison life
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Find a prisoner
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+  {% endblock %}

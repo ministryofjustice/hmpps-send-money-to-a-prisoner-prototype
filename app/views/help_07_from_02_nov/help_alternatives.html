@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="contact_us" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-l">Help</span>
+    <h1 class="govuk-heading-xl">
+      Alternatives to this service
+    </h1>
+
+
+
+    <p class="govuk-body">If you can't use this digital service because you don't have a debit card, <a href="/assisted_digital_routes/get_bank_account">find out how to set up a bank account</a>.</p>
+
+
+
+    <p class="govuk-body">If you can't use this service because you don't have access to a computer or the internet, you can <a href="/assisted_digital_routes/apply_for_exemption">apply for an exemption</a> which may allow you to send money through the post. An exemption is only granted in exceptional circumstances.</p>
+
+  </div>
+
+
+
+</div>
+{% endblock %}

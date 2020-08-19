@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Start page example
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Send money to someone in prison",
+  serviceUrl: "/"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div style="margin-top:-50px; margin-bottom:40px">
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <span class="govuk-phase-banner__text">
+        <a class="govuk-link" href="index">Contact us</a> if you need help or would like to give us some feedback.
+      </span>
+    </p>
+  </div>
+  <a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <span class="govuk-caption-l">Help with</span>
+
+    <h1 class="govuk-heading-l">A payment I've already made</h1>
+
+    <h1 class="govuk-body-l">
+      Check if the answer is here before you contact us
+    </h1>
+
+    {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+    {{ govukAccordion({
+      id: "accordion-default",
+      items: [
+      {
+        heading: {
+          text: "I want to cancel a payment"
+        },
+        content: {
+          html: "<p class='govuk-body'>We can't cancel your payment because once it's gone through the system, it's non-refundable.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "The prisoner has moved prisons"
+        },
+        content: {
+          html: "<p class='govuk-body'>Your payment will be transferred to the new prison but it may take a few days.</p>"
+        }
+      },
+      {
+        heading: {
+          text: "The prisoner has been released"
+        },
+        content: {
+          html: "<p class='govuk-body'>The prisoner needs to contact the prison and they’ll be sent a refund.</p>"
+        }
+      },
+  {
+    heading: {
+      text: "Does the prisoner know they've got my money? "
+    },
+    content: {
+      html: "<p class='govuk-body'>They might get an account slip from the wing officer when your money reaches their account, but this can take a few days and not all prisons use these slips.</br></br>
+        Ask the prisoner to check with their wing officer to see if your money has reached their account. Remember, a payment can take up to 5 days.
+      </p>"
+    }
+  },
+  {
+    heading: {
+      text: "Does a prisoner know who sent the money?"
+    },
+    content: {
+      html: "<p class='govuk-body'>A prisoner will see the name of who sent the money on their account slip, but not all prisons give these out. They could also ask a wing officer for the sender's name, but the prisoner has no access to a sender's personal or banking details.</p>"
+    }
+  },
+  {
+    heading: {
+      text: "I’m worried about a prisoner"
+    },
+    content: {
+      html: "<p class='govuk-body'>Contact the prison and they will put you through to an orderly officer or to the Safer Custody team where you can leave a message. You can [find a prisoner](https://www.gov.uk/find-prisoner) if unsure what prison they're in.</p>"
+    }
+  },
+  {
+    heading: {
+      text: "You don’t ask which prison it is"
+    },
+    content: {
+      html: "<p class='govuk-body'>You don't need the name of the prison to use this service.</p>"
+    }
+  }
+  ]
+}) }}
+
+<p class="govuk-body">
+  If you haven't found the answer:
+</p>
+<a href="help_past_payment" class="govuk-button">Contact us</a>
+
+</div>
+{% endblock %}
