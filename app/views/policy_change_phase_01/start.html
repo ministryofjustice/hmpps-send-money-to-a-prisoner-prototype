@@ -44,65 +44,68 @@ Start page example
 
 
 
-    <h1 class="govuk-heading-xl">
-      {% if serviceName %} {{ serviceName }} {% endif %}
-    </h1>
+      <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
 
-    <p class="govuk-body">You can use this service to make a payment by Visa, Mastercard or Maestro debit card. Money usually takes less than 3 working days to reach a prisoner’s account, but it may take longer.</p>
+      <p class="govuk-body">You can use this service to make a payment by Visa, Mastercard or Maestro debit card. Money usually takes less than 3 working days to reach a prisoner’s account, but it may take longer.</p>
 
-    <p>This service is free and secure, and available in all prisons in England and Wales.</p>
+      <p>This service is free and secure, and available in all prisons in England and Wales.</p>
 
-    <a href="interrupt" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-      Start now
-      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
-      </svg>
-    </a>
+      <a href="interrupt" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
 
-    <h2 class="govuk-heading-m"> Before you start</h2>
-    <p>You’ll need the:</p>
+      <h2 class="govuk-heading-m"> Before you start</h2>
+      <p>You’ll need the:</p>
 
-    <ul class="govuk-list govuk-list--bullet">
-      <li>prisoner’s date of birth</li>
-      <li>prisoner number</li>
-    </ul>
-
-
-    <h2 class="govuk-heading-m">Help using the service</h2>
-
-    <p>You can <a rel="external" href="/help_07/contact_us">get help</a> with making a payment, ask a question about a payment you’ve already made, or ask something else about the service.</p>
-
-    <p class="govuk-heading-m">Other ways to send money</p>
-    <p class="govuk-body">You can also use the service to find out how to make a UK bank transfer to a prisoner by:</p>
-
-    <ul class="govuk-list govuk-list--bullet">
-      <li>online banking</li>
-      <li>mobile banking app</li>
-      <li>telephone banking</li>
-    </ul>
-
-    <p class="govuk-heading-s">If you do not have a bank account</p>
-    <p class="govuk-body">  You can also <a href="#">send a postal order</a>, <a href="#">cheque or cash to a prisoner</a>.</p>
-
-</div>
-
-<div class="govuk-grid-column-one-third">
-
-  <aside class="app-related-items" role="complementary">
-    <h2 class="govuk-heading-m" id="subsection-title">
-      Related content
-    </h2>
-    <nav role="navigation" aria-labelledby="subsection-title">
-      <ul class="govuk-list govuk-!-font-size-16">
-        <li>
-          <a href="staying_in_touch">
-            Staying in touch with someone in prison
-          </a>
-        </li>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>prisoner’s date of birth</li>
+        <li>prisoner number</li>
       </ul>
-    </nav>
-  </aside>
 
-</div>
-</div>
-{% endblock %}
+
+      <h2 class="govuk-heading-m">Help using the service</h2>
+
+      <h2 class="govuk-heading-m"></h2>
+      <p>You can <a rel="external" href="/help_07/contact_us">get help</a> with making a payment or with a payment already made.</p>
+
+      <!-- <p>You can <a rel="external" href="/help_07/contact_us">get help</a> with making a payment, ask a question about a payment you’ve already made, or ask something else about the service.</p> -->
+
+      <p class="govuk-heading-m">Other ways to send money</p>
+      <p class="govuk-body">You can also use the service to find out how to make a UK bank transfer to a prisoner by:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>online banking</li>
+        <li>mobile banking app</li>
+        <li>telephone banking</li>
+      </ul>
+
+      <p class="govuk-heading-s">If you do not have a bank account</p>
+      <p class="govuk-body">  You can also <a href="#">send a postal order</a>, <a href="#">cheque or cash to a prisoner</a>.</p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="staying_in_touch">
+                Staying in touch with someone in prison
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+  {% endblock %}
