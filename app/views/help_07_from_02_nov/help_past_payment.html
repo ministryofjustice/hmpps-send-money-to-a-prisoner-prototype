@@ -81,7 +81,7 @@ Start page example
 
       {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
-      {{ govukRadios({
+      <!-- {{ govukRadios({
         classes: "govuk-radios--inline",
         idPrefix: "changed-name",
         name: "changed-name",
@@ -102,7 +102,7 @@ Start page example
           text: "Bank transfer"
         }
         ]
-      }) }}
+      }) }} -->
 
       {%- from "moj/components/currency-input/macro.njk" import mojCurrencyInput -%}
 
@@ -147,7 +147,7 @@ Start page example
         <label class="govuk-label" for="more-detail">
           Give details:
         </label>
-
+        <span class="govuk-hint">Don't include card or bank details</span>
         <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
       </div>
 
